@@ -5,9 +5,50 @@
  <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <style>
-  table, thead, tbody, tfoot, tr, th, td {border: 1px solid black; border-collapse: collapse;}
-  .subject1 {background-color:lightgray;}
-  .subject2 {background-color:#FAF4C0;}
+  table, thead, tbody, tfoot, tr, th, td {
+    font-size: 11px;
+    width: 500px;
+    height: 85px;
+    border: 2px solid black; 
+    padding: 5px;
+    text-align: center;
+    border-collapse: collapse;}
+    th {
+      font-size: 18px;
+    }
+    .MON_1 {
+      background-color:lightblue;
+    }
+    .MON_2 {
+      background-color:lightyellow;
+    }
+    .MON_3 {
+      background-color:pink;
+    }
+    .TUE_1 {
+      background-color:#F5A9A9;
+    }
+    .TUE_2 {
+      background-color:#F5A9D0;
+    }
+    .WED_1 {
+      background-color:pink;
+    }
+    .WED_2 {
+      background-color:#F5A9A9;
+    }
+    .WED_3 {
+      background-color:#A9BCF5;
+    }
+    .THU_1 {
+            background-color:lightblue;
+    }
+    .THU_2 {
+            background-color:#F5A9D0;
+    }
+    .THU_3 {
+      background-color:#D0F5A9;
+    }
    </style>
    <!-- border-collapse: collapse 단선으로, 반대는 seperate -->
    <title>HTML5 시간표</title>
@@ -15,88 +56,83 @@
   <body>
   <table>
   <caption>
-    &lt;표 1&gt; 시간표
+    &lt;박수빈&gt;시간표
   </caption>
+  <colgroup>
+    <col style="background-color:#eee;">
+    <col>
+    <col>
+    <col>
+    <col>
+    <col>
+  </colgroup>
   <thead>
-    <tr>
-      <th>시간</th>
-      <th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
-    <tbody>
-      <tr>
-        <td>1교시</td>
-        <td rowspan="2">임베디드소프트웨어</td>
-        <td></td>
-        <td>운영체제</td>
-        <td rowspan="2">임베디드소프트웨어</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>2교시</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>3교시</td>
-        <td></td>
-        <td></td>
-        <td>수학</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>4교시</td>
-        <td></td>
-        <td></td>
-        <td>수학</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>5교시</td>
-        <td></td>
-        <td></td>
-        <td>수학</td>
-         <td></td>
-        <td></td>
-         <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>6교시</td>
-        <td></td>
-        <td></td>
-        <td>수학</td>
-        <td></td>
-        <td></td>
-      </tr>
-       <tr>
-        <td>7교시</td>
-        <td></td>
-        <td></td>
-        <td>수학</td>
-         <td></td>
-        <td></td>
-      </tr>
-       <tr>
-        <td>8교시</td>
-        <td></td>
-        <td></td>
-        <td>수학</td>
-        <td></td>
-        <td></td>
-      </tr>
-       <tr>
-        <td>9교시</td>
-        <td></td>
-        <td></td>
-        <td>수학</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
+   <tr>
+    <th>시간</th>
+    <th>월</th>
+    <th>화</th>
+    <th>수</th>
+    <th>목</th>
+    <th>금</th>
     </tr>
   </thead>
+  <tbody>
+    <tr>
+    <td><b>1교시</b></td>
+      <td rowspan="2" class="MON_1"><b>임베디드<br/>소프트웨어</b></td>
+      <td></td>
+      <td class="WED_1"><b>운영체제</b></td>
+      <td rowspan="2" class="THU_1"><b>임베디드<br/>소프트웨어</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>2교시</b></td>
+      <td></td>
+      <td class="WED_2"><b>데이터베이스<br/>시스템</b></td>
+    </tr>
+    <tr>
+      <td><b>3교시</b></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>4교시</b></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>5교시</b></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2" class="THU_2"><b>인터넷응용</b></td>
+    </tr>
+    <tr>
+      <td><b>6교시</b></td>
+      <td rowspan="2" class="MON_2"><b>컴퓨터공학과<br/>진로취창업<br/>역량개발</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>7교시</b></td>
+      <td rowspan="2" class="TUE_1"><b>데이터베이스<br/>시스템</b></td>
+      <td rowspan="3" class="WED_3"><b>수학언어</b></td>
+      <td class="THU_3"><b>진로멘토링</b></td>
+    </tr>
+    <tr>
+      <td><b>8교시</b></td>
+      <td rowspan="2" class="MON_3"><b>운영체제</b></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>9교시</b></td>
+      <td class="TUE_2"><b>인터넷응용</b></td>
+      <td></td>
+    </tr>
+  </tbody>
   </table>
 </body>
 </html>
