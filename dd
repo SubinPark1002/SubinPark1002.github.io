@@ -1,0 +1,12 @@
+<!doctype html>
+<!-- formText1.html -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>폼 학습</title></head>
+<body>
+  <h2>JSP form</h2>
+	<h2>아이디: admin<br/></h2>
+	<h2>패스워드: 1234<br/></h2>
+  </body></html>
